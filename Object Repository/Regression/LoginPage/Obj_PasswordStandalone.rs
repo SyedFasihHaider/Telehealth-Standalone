@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Obj_Submit</name>
+   <name>Obj_PasswordStandalone</name>
    <tag></tag>
-   <elementGuidId>1372be79-755b-45f9-bf17-284626bb8201</elementGuidId>
+   <elementGuidId>a70d6ca8-f8dd-490c-996f-eff490038b6d</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>
