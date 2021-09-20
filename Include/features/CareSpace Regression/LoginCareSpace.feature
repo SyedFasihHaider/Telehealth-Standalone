@@ -16,3 +16,9 @@ Feature: Login
     Examples: 
       | Username | Password |
       | weqw     | sadasd   |
+     
+     
+   Scenario: Clicks on the Cancel Button 
+   Given the user Enter his Credentials 
+   When the user clicks on the "Cancel" button
+   Then the user will be navigated back to the Main login page
