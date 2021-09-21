@@ -45,22 +45,22 @@ import cucumber.api.java.en.When
 
 
 class Login {
-	
+
 	/**
 	 * Items should be available on the Login Page
 	 */
 	@When("the user lands on the Login Page")
 	def lands_to_LoginPage() {
 		WebUI.openBrowser('')
-		
+
 		WebUI.navigateToUrl(GlobalVariable.URL)
 	}
-	
+
 	@Then("the user should be able to see the Persivia Telehealth Logo")
 	def Telehealth_Logo() {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/LoginPage/Obj_Logo'), 0)
 	}
-	
+
 	@And("the user should be able to Login into the Standalone Credentials")
 	def standalone_login() {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/LoginPage/Obj_LoginWithCareSpace'), 0)
@@ -70,21 +70,21 @@ class Login {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/LoginPage/Obj_ForgotPassword'), 0)
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/LoginPage/Obj_SignUpNew'), 0)
 	}
-	
+
 	@And("the user should be able to Login via CareSpace")
 	def CareSpace_Login() {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/LoginPage/Obj_LoginWithCareSpace'), 0)
 	}
-	
+
 	@And("the user should be able to Login via CM Portal")
 	def CMPortal_Login() {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/LoginPage/Obj_LoginWithCMPortal'), 0)
 	}
-	
+
 	/**
 	 * Login with valid credentials
 	 */
-	
+
 	@Given("The user navigate to login page")
 	def user_navigate_to_loginpage() {
 		WebUI.openBrowser('')
@@ -112,7 +112,7 @@ class Login {
 		WebUI.click(findTestObject('Object Repository/Regression/Logout/Obj_Logout'))
 
 		WebUI.click(findTestObject('Object Repository/Regression/Logout/Obj_Yes'))
-		
+
 		WebUI.takeScreenshot()
 	}
 
@@ -150,6 +150,4 @@ class Login {
 
 		WebUI.closeBrowser()
 	}
-	
-	
 }
