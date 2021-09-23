@@ -150,4 +150,41 @@ class Login {
 
 		WebUI.closeBrowser()
 	}
+	
+	/**
+	 * User Clicks on the Cancel button 
+	 */
+	
+	@When("the user clicks on the Login via Carespace button")
+	def clicks_LoginCareSpace() {
+		WebUI.openBrowser('')
+		WebUI.navigateToUrl(GlobalVariable.URL)
+		WebUI.click(findTestObject('Object Repository/Regression/LoginPage/Obj_LoginWithCareSpace'))
+	}
+	
+	@And("enters the (.*) and (.*)")
+	def credentials(String Username ,String Password) {
+		
+		WebUI.setText(findTestObject('Object Repository/Regression/CareSpaceLogin/Obj_Email'),GlobalVariable.Username)
+
+		WebUI.setText(findTestObject('Object Repository/Regression/CareSpaceLogin/Obj_Password'),GlobalVariable.Password)
+	}
+	
+	@And("clicks on the Cancel button")
+	def cancel_button() {
+		WebUI.click(findTestObject('Object Repository/Regression/CareSpaceLogin/Obj_Cancel'))
+	}
+	
+	@Then("the user will not be logged into the Telehealth")
+	def remains_on_CareSpaceLogin() {
+		
+	}
+	
+	
+	@And("user will be navigated back to the Main login page")
+	def LoginPage() {
+		WebUI.takeScreenshot()
+		
+		WebUI.closeBrowser()
+	}
 }

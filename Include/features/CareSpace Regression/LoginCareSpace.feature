@@ -22,3 +22,11 @@ Feature: Login
     Examples: 
       | Username      | Password |
       | XYz@gmail.com | Fasih    |
+      
+   Scenario: User Clicks on the Cancel button 
+   	When the user clicks on the Login via Carespace button
+   	And enters the <Username> and <Password>
+   	And clicks on the Cancel button
+   	Then the user will not be logged into the Telehealth
+   	And user will be navigated back to the Main login page 
+   
