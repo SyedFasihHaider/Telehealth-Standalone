@@ -5,8 +5,8 @@ Feature: Login
     Then the user should be able to see the Persivia Telehealth Logo
     And the user should be able to Login into the Standalone Credentials
     * the user should be able to Login via CareSpace
-   # * the user should be able to Login via CM Portal
 
+  # * the user should be able to Login via CM Portal
   Scenario: Login with correct credentials
     Given The user navigate to login page
     When The user enters <Username> and <Password>
@@ -21,4 +21,4 @@ Feature: Login
 
     Examples: 
       | Username | Password |
-      | weqw     | sadasd   |
+      | weqw     | Fasih    |
