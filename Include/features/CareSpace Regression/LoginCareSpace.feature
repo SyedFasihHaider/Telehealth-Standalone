@@ -20,5 +20,5 @@ Feature: Login
     Then The user will see the authentication message
 
     Examples: 
-      | Username | Password |
-      | weqw     | Fasih    |
+      | Username      | Password |
+      | XYz@gmail.com | Fasih    |
