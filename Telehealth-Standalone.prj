@@ -6,6 +6,7 @@
    <UUID>901d38f9-bbf8-432e-844e-6b67b88aaa16</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>/Users/fasihhaider/git/Telehealth-Standalone/Telehealth-Standalone.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

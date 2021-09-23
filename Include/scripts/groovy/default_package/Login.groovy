@@ -63,7 +63,6 @@ class Login {
 
 	@And("the user should be able to Login into the Standalone Credentials")
 	def standalone_login() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/LoginPage/Obj_LoginWithCareSpace'), 0)
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/LoginPage/Obj_EmailStandalone'), 0)
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/LoginPage/Obj_PasswordStandalone'), 0)
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/LoginPage/Obj_LoginStandalone'), 0)
@@ -74,12 +73,14 @@ class Login {
 	@And("the user should be able to Login via CareSpace")
 	def CareSpace_Login() {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/LoginPage/Obj_LoginWithCareSpace'), 0)
+		WebUI.closeBrowser()
 	}
 
-	@And("the user should be able to Login via CM Portal")
-	def CMPortal_Login() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/LoginPage/Obj_LoginWithCMPortal'), 0)
-	}
+	/**@And("the user should be able to Login via CM Portal")
+	 def CMPortal_Login() {
+	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/LoginPage/Obj_LoginWithCMPortal'), 0)
+	 WebUI.takeScreenshot()
+	 }*/
 
 	/**
 	 * Login with valid credentials
@@ -92,13 +93,13 @@ class Login {
 		WebUI.navigateToUrl(GlobalVariable.URL)
 	}
 
-	@When("The user enters (.) and (.)")
+	@When("The user enters (.*) and (.*)")
 	def user_enters_username_password(String Username ,String Password) {
-		WebUI.setText(findTestObject('Object Repository/Regression/CareSpaceLogin/Obj_Email'),
-				GlobalVariable.Username)
+		WebUI.click(findTestObject('Object Repository/Regression/LoginPage/Obj_LoginWithCareSpace'))
 
-		WebUI.setText(findTestObject('Object Repository/Regression/CareSpaceLogin/Obj_Password'),
-				GlobalVariable.Password)
+		WebUI.setText(findTestObject('Object Repository/Regression/CareSpaceLogin/Obj_Email'),GlobalVariable.Username)
+
+		WebUI.setText(findTestObject('Object Repository/Regression/CareSpaceLogin/Obj_Password'),GlobalVariable.Password)
 	}
 
 	@And("Click on the login button")
@@ -112,7 +113,7 @@ class Login {
 		WebUI.click(findTestObject('Object Repository/Regression/Logout/Obj_Logout'))
 
 		WebUI.click(findTestObject('Object Repository/Regression/Logout/Obj_Yes'))
-
+		WebUI.delay(2)
 		WebUI.takeScreenshot()
 	}
 
@@ -121,8 +122,6 @@ class Login {
 	/**
 	 * Login with invalid credentials
 	 */
-
-
 	@Given("User navigates to login page")
 	def user_lands_on_loginpage() {
 		WebUI.openBrowser('')
@@ -130,8 +129,9 @@ class Login {
 		WebUI.navigateToUrl(GlobalVariable.URL)
 	}
 
-	@When("The user enters (.) and (.) in the fields")
+	@When("User enters (.*) and (.*)")
 	def user_enters_username_password_CareSpace(String Username ,String Password) {
+		WebUI.click(findTestObject('Object Repository/Regression/LoginPage/Obj_LoginWithCareSpace'))
 		WebUI.setText(findTestObject('Object Repository/Regression/CareSpaceLogin/Obj_Email'),Username)
 
 		WebUI.setText(findTestObject('Object Repository/Regression/CareSpaceLogin/Obj_Password'),Password)
@@ -144,7 +144,7 @@ class Login {
 
 	@Then("The user will see the authentication message")
 	def user_see_authentication_message() {
-		WebUI.verifyTextPresent('Invalid credentials', false)
+		WebUI.verifyTextPresent('Account with this login does not exist', false)
 
 		WebUI.takeScreenshot()
 

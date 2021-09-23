@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "063B2836E8161904639043761EE0154B",
+  "keywordClasses": [
+    {
+      "name": "cucumber_runner.Runner_Login",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

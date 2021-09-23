@@ -7,11 +7,13 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>[class^='modal show'] [type='submit']</value>
+         <value>[class^='modal-footer'] [type='submit']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
