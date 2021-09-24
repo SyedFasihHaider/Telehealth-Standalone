@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Include/features/CareSpace Regression/InviteEmail.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Include/features/CareSpace Regression/InviteSMS.feature");
 formatter.feature({
-  "name": "Invite Email",
+  "name": "Invite SMS",
   "description": "  Given the user is on the Telehealth Home Page",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Invite via Email Pop- up Verification",
+  "name": "Invite via SMS Pop- up Verification",
   "description": "",
   "keyword": "Scenario"
 });
@@ -13,71 +13,71 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the provider clicks on the Invite Option",
+  "name": "the user clicks on the Invite Option",
   "keyword": "When "
 });
 formatter.match({
-  "location": "InviteEmail.CLicks_on_InviteOption()"
+  "location": "InviteSMS.user_CLicks_on_InviteOption_HomePage()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user will be able to select the Invite via Email option",
+  "name": "the user will be able to select the Invite via SMS option",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "InviteEmail.Selects_Invite_EmailOption()"
+  "location": "InviteSMS.Selects_Invite_SMSOption()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user will be able to see the Invite Via Email Text and Email icon on the Pop-up",
+  "name": "the user will be able to see the Invite Via SMS Text and SMS icon on the Pop-up",
   "keyword": "And "
 });
 formatter.match({
-  "location": "InviteEmail.Email_Pop_up()"
+  "location": "InviteSMS.SMS_Pop_up()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user will be able to see the Patient email address Heading and Patient Email address field",
+  "name": "the user will be able to see the Patient Mobile Number Heading and Patient Mobile Number field",
   "keyword": "* "
 });
 formatter.match({
-  "location": "InviteEmail.Patient_Email_Add_Heading_and_Field()"
+  "location": "InviteSMS.Patient_Mobile_Number_Heading_and_Field()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user will be able to see the Message Heading and Message body which includes the Template of the Email",
+  "name": "the user will be able to see the Message Heading and Message body which includes the Template of the SMS",
   "keyword": "* "
 });
 formatter.match({
-  "location": "InviteEmail.Message_heading_and_Message_Body()"
+  "location": "InviteSMS.Message_heading_and_Message_Body_HomePage()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user will be able to see the Send Email Button",
+  "name": "the user will be able to see the Send SMS Button",
   "keyword": "* "
 });
 formatter.match({
-  "location": "InviteEmail.Send_Email_Button()"
+  "location": "InviteSMS.Send_SMS_Button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user will be able to see the Cancel Button",
+  "name": "the user will be able to see the Cancel Button to close the SMS Pop-Up",
   "keyword": "* "
 });
 formatter.match({
-  "location": "InviteEmail.Cancel_Email_Button()"
+  "location": "InviteSMS.Cancel_SMS_Button()"
 });
 formatter.result({
   "status": "passed"
@@ -86,28 +86,28 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "name": "Invite via Email with valid Email Address",
+  "name": "Invite via SMS with valid Mobile Number",
   "description": "",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "the user opens the Email invite option",
+  "name": "the user opens the SMS invite option",
   "keyword": "When "
 });
 formatter.step({
-  "name": "the user enters the valid \u003cEmail\u003e address",
+  "name": "the user enters the valid mobile \u003cNumber\u003e",
   "keyword": "And "
 });
 formatter.step({
-  "name": "the user clicks on the Send Email Button",
+  "name": "the user clicks on the Send SMS Button",
   "keyword": "And "
 });
 formatter.step({
-  "name": "the email will be sent to the respective email address",
+  "name": "the SMS will be sent to the respective mobile number",
   "keyword": "Then "
 });
 formatter.step({
-  "name": "there will be a Sucessful message will be shown on the top",
+  "name": "there will be a Sucessful message will be shown on the top After send button is pressed",
   "keyword": "And "
 });
 formatter.examples({
@@ -117,18 +117,18 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "Email"
+        "Number"
       ]
     },
     {
       "cells": [
-        "fasih.haider@sltn.net"
+        "+1 9294154089"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Invite via Email with valid Email Address",
+  "name": "Invite via SMS with valid Mobile Number",
   "description": "",
   "keyword": "Scenario Outline"
 });
@@ -136,51 +136,51 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user opens the Email invite option",
+  "name": "the user opens the SMS invite option",
   "keyword": "When "
 });
 formatter.match({
-  "location": "InviteEmail.emails_inivte_option()"
+  "location": "InviteSMS.SMS_inivte_option()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user enters the valid fasih.haider@sltn.net address",
+  "name": "the user enters the valid mobile +1 9294154089",
   "keyword": "And "
 });
 formatter.match({
-  "location": "InviteEmail.user_enters_email(String)"
+  "location": "InviteSMS.user_enters_MobileNumber(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user clicks on the Send Email Button",
+  "name": "the user clicks on the Send SMS Button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "InviteEmail.user_send_email()"
+  "location": "InviteSMS.user_send_SMS()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the email will be sent to the respective email address",
+  "name": "the SMS will be sent to the respective mobile number",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "InviteEmail.email_sent()"
+  "location": "InviteSMS.SMS_sent()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "there will be a Sucessful message will be shown on the top",
+  "name": "there will be a Sucessful message will be shown on the top After send button is pressed",
   "keyword": "And "
 });
 formatter.match({
-  "location": "InviteEmail.email_alert()"
+  "location": "InviteSMS.SMS_alert()"
 });
 formatter.result({
   "status": "passed"
@@ -189,24 +189,24 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "name": "Invite via email with invalid Email Address",
+  "name": "Invite via SMS with invalid Mobile Number",
   "description": "",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "the provider clicked on the on the invite option and open the Email Invite",
+  "name": "the provider clicked on the on the invite option and open the SMS Invite",
   "keyword": "When "
 });
 formatter.step({
-  "name": "the user enters the invalid \u003cEmail\u003e address",
+  "name": "the user enters the invalid mobile \u003cNumber\u003e",
   "keyword": "And "
 });
 formatter.step({
-  "name": "the system will analyse the email address",
+  "name": "the system will analyse the mobile number",
   "keyword": "And "
 });
 formatter.step({
-  "name": "the system will generate an error under the Email field",
+  "name": "the system will generate an error under the Mobile Number field",
   "keyword": "Then "
 });
 formatter.examples({
@@ -216,18 +216,18 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "Email"
+        "Number"
       ]
     },
     {
       "cells": [
-        "abc.com"
+        "+1 929415"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Invite via email with invalid Email Address",
+  "name": "Invite via SMS with invalid Mobile Number",
   "description": "",
   "keyword": "Scenario Outline"
 });
@@ -235,41 +235,41 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the provider clicked on the on the invite option and open the Email Invite",
+  "name": "the provider clicked on the on the invite option and open the SMS Invite",
   "keyword": "When "
 });
 formatter.match({
-  "location": "InviteEmail.provider_opens_the_email_invite()"
+  "location": "InviteSMS.provider_opens_the_SMS_invite()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user enters the invalid abc.com address",
+  "name": "the user enters the invalid mobile +1 929415",
   "keyword": "And "
 });
 formatter.match({
-  "location": "InviteEmail.user_enters_emailAddress(String)"
+  "location": "InviteSMS.user_enters_SMSMobileNumber(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the system will analyse the email address",
+  "name": "the system will analyse the mobile number",
   "keyword": "And "
 });
 formatter.match({
-  "location": "InviteEmail.system_analyse()"
+  "location": "InviteSMS.system_analyse_Number()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the system will generate an error under the Email field",
+  "name": "the system will generate an error under the Mobile Number field",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "InviteEmail.email_invalid_format_error()"
+  "location": "InviteSMS.SMS_invalid_format_error()"
 });
 formatter.result({
   "status": "passed"
@@ -278,7 +278,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Invite via Email Template without Passcode",
+  "name": "Invite via SMS Template without Passcode",
   "description": "",
   "keyword": "Scenario"
 });
@@ -286,31 +286,31 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user opens the Email invite",
+  "name": "the user opens the SMS invite",
   "keyword": "When "
 });
 formatter.match({
-  "location": "InviteEmail.email_invite_PopUp()"
+  "location": "InviteSMS.SMS_invite_PopUp()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user will see the Email Template in the Email Body",
+  "name": "the user will see the SMS Template in the SMS Body",
   "keyword": "And "
 });
 formatter.match({
-  "location": "InviteEmail.email_body()"
+  "location": "InviteSMS.SMS_body()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "there will be no passcode in the Email Body",
+  "name": "there will be no passcode in the SMS Body",
   "keyword": "And "
 });
 formatter.match({
-  "location": "InviteEmail.no_passcode()"
+  "location": "InviteSMS.no_passcode_SMS()"
 });
 formatter.result({
   "status": "passed"

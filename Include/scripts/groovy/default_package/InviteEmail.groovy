@@ -180,19 +180,18 @@ class InviteEmail {
 	 * Scenario:Invite via Email Template with Passcode
 	 */
 	/**@When("the user clicks on the Email Invite")
-	def invite_via_email_PopUp() {
-		WebUI.click(findTestObject('Object Repository/Regression/Home Page/Obj_Invite'))
-		WebUI.click(findTestObject('Object Repository/Regression/Home Page/Obj_EmailInvite'))
-	}
-	@And("the user will be able to see the Email Template")
-	def email_body_template() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/Invite Email/Obj_EmailBody'), 0)
-	}
-
-	@And("there will be a passcode in the Email Template")
-	def passcode_embeded() {
-		WebUI.verifyTextPresent('The passcode to enter the room is:', false)
-		WebUI.delay(1)
-		WebUI.click(findTestObject('Object Repository/Regression/Invite Email/Obj_CancelButton'))
-	}*/
+	 def invite_via_email_PopUp() {
+	 WebUI.click(findTestObject('Object Repository/Regression/Home Page/Obj_Invite'))
+	 WebUI.click(findTestObject('Object Repository/Regression/Home Page/Obj_EmailInvite'))
+	 }
+	 @And("the user will be able to see the Email Template")
+	 def email_body_template() {
+	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/Invite Email/Obj_EmailBody'), 0)
+	 }
+	 @And("there will be a passcode in the Email Template")
+	 def passcode_embeded() {
+	 WebUI.verifyTextPresent('The passcode to enter the room is:', false)
+	 WebUI.delay(1)
+	 WebUI.click(findTestObject('Object Repository/Regression/Invite Email/Obj_CancelButton'))
+	 }*/
 }

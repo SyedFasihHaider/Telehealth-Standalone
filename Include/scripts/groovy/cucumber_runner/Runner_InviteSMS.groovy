@@ -50,10 +50,11 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features="Include/features/CareSpace Regression/InviteEmail.feature",
+@CucumberOptions(features="Include/features/CareSpace Regression/InviteSMS.feature",
 glue="",
 plugin=["pretty", "html:ReportsFolder", "json:ReportsFolder/cucumber.json"])
 
 
-class Runner_InviteEmail {
+class Runner_InviteSMS {
+	
 }

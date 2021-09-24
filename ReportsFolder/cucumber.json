@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 13763749800,
+              "duration": 7879009600,
               "status": "passed"
             },
             "match": {
@@ -15,13 +15,13 @@
           }
         ],
         "line": 5,
-        "name": "Invite via Email Pop- up Verification",
+        "name": "Invite via SMS Pop- up Verification",
         "description": "",
-        "id": "invite-email;invite-via-email-pop--up-verification",
+        "id": "invite-sms;invite-via-sms-pop--up-verification",
         "after": [
           {
             "result": {
-              "duration": 3851488800,
+              "duration": 3689403400,
               "status": "passed"
             },
             "match": {
@@ -34,85 +34,85 @@
         "steps": [
           {
             "result": {
-              "duration": 5735183900,
+              "duration": 3812745700,
               "status": "passed"
             },
             "line": 6,
-            "name": "the provider clicks on the Invite Option",
+            "name": "the user clicks on the Invite Option",
             "match": {
-              "location": "InviteEmail.CLicks_on_InviteOption()"
+              "location": "InviteSMS.user_CLicks_on_InviteOption_HomePage()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 672686300,
+              "duration": 510800900,
               "status": "passed"
             },
             "line": 7,
-            "name": "the user will be able to select the Invite via Email option",
+            "name": "the user will be able to select the Invite via SMS option",
             "match": {
-              "location": "InviteEmail.Selects_Invite_EmailOption()"
+              "location": "InviteSMS.Selects_Invite_SMSOption()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 897460900,
+              "duration": 775273400,
               "status": "passed"
             },
             "line": 8,
-            "name": "the user will be able to see the Invite Via Email Text and Email icon on the Pop-up",
+            "name": "the user will be able to see the Invite Via SMS Text and SMS icon on the Pop-up",
             "match": {
-              "location": "InviteEmail.Email_Pop_up()"
+              "location": "InviteSMS.SMS_Pop_up()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 763787400,
+              "duration": 627829900,
               "status": "passed"
             },
             "line": 9,
-            "name": "the user will be able to see the Patient email address Heading and Patient Email address field",
+            "name": "the user will be able to see the Patient Mobile Number Heading and Patient Mobile Number field",
             "match": {
-              "location": "InviteEmail.Patient_Email_Add_Heading_and_Field()"
+              "location": "InviteSMS.Patient_Mobile_Number_Heading_and_Field()"
             },
             "keyword": "* "
           },
           {
             "result": {
-              "duration": 782977700,
+              "duration": 622216700,
               "status": "passed"
             },
             "line": 10,
-            "name": "the user will be able to see the Message Heading and Message body which includes the Template of the Email",
+            "name": "the user will be able to see the Message Heading and Message body which includes the Template of the SMS",
             "match": {
-              "location": "InviteEmail.Message_heading_and_Message_Body()"
+              "location": "InviteSMS.Message_heading_and_Message_Body_HomePage()"
             },
             "keyword": "* "
           },
           {
             "result": {
-              "duration": 412412900,
+              "duration": 316608300,
               "status": "passed"
             },
             "line": 13,
-            "name": "the user will be able to see the Send Email Button",
+            "name": "the user will be able to see the Send SMS Button",
             "match": {
-              "location": "InviteEmail.Send_Email_Button()"
+              "location": "InviteSMS.Send_SMS_Button()"
             },
             "keyword": "* "
           },
           {
             "result": {
-              "duration": 870149000,
+              "duration": 666435500,
               "status": "passed"
             },
             "line": 14,
-            "name": "the user will be able to see the Cancel Button",
+            "name": "the user will be able to see the Cancel Button to close the SMS Pop-Up",
             "match": {
-              "location": "InviteEmail.Cancel_Email_Button()"
+              "location": "InviteSMS.Cancel_SMS_Button()"
             },
             "keyword": "* "
           }
@@ -122,7 +122,7 @@
         "before": [
           {
             "result": {
-              "duration": 40290175500,
+              "duration": 6796815400,
               "status": "passed"
             },
             "match": {
@@ -131,13 +131,13 @@
           }
         ],
         "line": 25,
-        "name": "Invite via Email with valid Email Address",
+        "name": "Invite via SMS with valid Mobile Number",
         "description": "",
-        "id": "invite-email;invite-via-email-with-valid-email-address;;2",
+        "id": "invite-sms;invite-via-sms-with-valid-mobile-number;;2",
         "after": [
           {
             "result": {
-              "duration": 3696187600,
+              "duration": 3430417400,
               "status": "passed"
             },
             "match": {
@@ -150,67 +150,67 @@
         "steps": [
           {
             "result": {
-              "duration": 6576792400,
+              "duration": 3949684700,
               "status": "passed"
             },
             "line": 17,
-            "name": "the user opens the Email invite option",
+            "name": "the user opens the SMS invite option",
             "match": {
-              "location": "InviteEmail.emails_inivte_option()"
+              "location": "InviteSMS.SMS_inivte_option()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1043648900,
+              "duration": 1734178200,
               "status": "passed"
             },
             "line": 18,
-            "name": "the user enters the valid fasih.haider@sltn.net address",
+            "name": "the user enters the valid mobile +1 9294154089",
             "match": {
               "arguments": [
                 {
-                  "val": "fasih.haider@sltn.net",
-                  "offset": 26
+                  "val": "+1 9294154089",
+                  "offset": 33
                 }
               ],
-              "location": "InviteEmail.user_enters_email(String)"
+              "location": "InviteSMS.user_enters_MobileNumber(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 459043200,
+              "duration": 354615000,
               "status": "passed"
             },
             "line": 19,
-            "name": "the user clicks on the Send Email Button",
+            "name": "the user clicks on the Send SMS Button",
             "match": {
-              "location": "InviteEmail.user_send_email()"
+              "location": "InviteSMS.user_send_SMS()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 371400,
+              "duration": 2013567400,
               "status": "passed"
             },
             "line": 20,
-            "name": "the email will be sent to the respective email address",
+            "name": "the SMS will be sent to the respective mobile number",
             "match": {
-              "location": "InviteEmail.email_sent()"
+              "location": "InviteSMS.SMS_sent()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1052171400,
+              "duration": 1618563900,
               "status": "passed"
             },
             "line": 21,
-            "name": "there will be a Sucessful message will be shown on the top",
+            "name": "there will be a Sucessful message will be shown on the top After send button is pressed",
             "match": {
-              "location": "InviteEmail.email_alert()"
+              "location": "InviteSMS.SMS_alert()"
             },
             "keyword": "And "
           }
@@ -220,7 +220,7 @@
         "before": [
           {
             "result": {
-              "duration": 11474687900,
+              "duration": 6733026200,
               "status": "passed"
             },
             "match": {
@@ -229,13 +229,13 @@
           }
         ],
         "line": 35,
-        "name": "Invite via email with invalid Email Address",
+        "name": "Invite via SMS with invalid Mobile Number",
         "description": "",
-        "id": "invite-email;invite-via-email-with-invalid-email-address;;2",
+        "id": "invite-sms;invite-via-sms-with-invalid-mobile-number;;2",
         "after": [
           {
             "result": {
-              "duration": 3871667500,
+              "duration": 3673020300,
               "status": "passed"
             },
             "match": {
@@ -248,55 +248,55 @@
         "steps": [
           {
             "result": {
-              "duration": 4975898400,
+              "duration": 4038160800,
               "status": "passed"
             },
             "line": 28,
-            "name": "the provider clicked on the on the invite option and open the Email Invite",
+            "name": "the provider clicked on the on the invite option and open the SMS Invite",
             "match": {
-              "location": "InviteEmail.provider_opens_the_email_invite()"
+              "location": "InviteSMS.provider_opens_the_SMS_invite()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 999346800,
+              "duration": 913177900,
               "status": "passed"
             },
             "line": 29,
-            "name": "the user enters the invalid abc.com address",
+            "name": "the user enters the invalid mobile +1 929415",
             "match": {
               "arguments": [
                 {
-                  "val": "abc.com",
-                  "offset": 28
+                  "val": "+1 929415",
+                  "offset": 35
                 }
               ],
-              "location": "InviteEmail.user_enters_emailAddress(String)"
+              "location": "InviteSMS.user_enters_SMSMobileNumber(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 281700,
+              "duration": 191000,
               "status": "passed"
             },
             "line": 30,
-            "name": "the system will analyse the email address",
+            "name": "the system will analyse the mobile number",
             "match": {
-              "location": "InviteEmail.system_analyse()"
+              "location": "InviteSMS.system_analyse_Number()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2541213900,
+              "duration": 2211743000,
               "status": "passed"
             },
             "line": 31,
-            "name": "the system will generate an error under the Email field",
+            "name": "the system will generate an error under the Mobile Number field",
             "match": {
-              "location": "InviteEmail.email_invalid_format_error()"
+              "location": "InviteSMS.SMS_invalid_format_error()"
             },
             "keyword": "Then "
           }
@@ -306,7 +306,7 @@
         "before": [
           {
             "result": {
-              "duration": 9112606700,
+              "duration": 7470609200,
               "status": "passed"
             },
             "match": {
@@ -315,13 +315,13 @@
           }
         ],
         "line": 37,
-        "name": "Invite via Email Template without Passcode",
+        "name": "Invite via SMS Template without Passcode",
         "description": "",
-        "id": "invite-email;invite-via-email-template-without-passcode",
+        "id": "invite-sms;invite-via-sms-template-without-passcode",
         "after": [
           {
             "result": {
-              "duration": 3795863800,
+              "duration": 3572297600,
               "status": "passed"
             },
             "match": {
@@ -334,48 +334,48 @@
         "steps": [
           {
             "result": {
-              "duration": 15385512800,
+              "duration": 4735536500,
               "status": "passed"
             },
             "line": 38,
-            "name": "the user opens the Email invite",
+            "name": "the user opens the SMS invite",
             "match": {
-              "location": "InviteEmail.email_invite_PopUp()"
+              "location": "InviteSMS.SMS_invite_PopUp()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 506944700,
+              "duration": 487047800,
               "status": "passed"
             },
             "line": 39,
-            "name": "the user will see the Email Template in the Email Body",
+            "name": "the user will see the SMS Template in the SMS Body",
             "match": {
-              "location": "InviteEmail.email_body()"
+              "location": "InviteSMS.SMS_body()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1456372400,
+              "duration": 1374265100,
               "status": "passed"
             },
             "line": 40,
-            "name": "there will be no passcode in the Email Body",
+            "name": "there will be no passcode in the SMS Body",
             "match": {
-              "location": "InviteEmail.no_passcode()"
+              "location": "InviteSMS.no_passcode_SMS()"
             },
             "keyword": "And "
           }
         ]
       }
     ],
-    "name": "Invite Email",
+    "name": "Invite SMS",
     "description": "  Given the user is on the Telehealth Home Page",
-    "id": "invite-email",
+    "id": "invite-sms",
     "keyword": "Feature",
-    "uri": "Include/features/CareSpace Regression/InviteEmail.feature",
+    "uri": "Include/features/CareSpace Regression/InviteSMS.feature",
     "tags": []
   }
 ]

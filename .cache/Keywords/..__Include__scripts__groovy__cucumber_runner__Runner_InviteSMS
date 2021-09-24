@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "5B167E0E7E7FE21F6420B4EBC402B57B",
+  "keywordClasses": [
+    {
+      "name": "cucumber_runner.Runner_InviteSMS",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}
