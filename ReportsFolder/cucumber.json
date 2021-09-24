@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 16283263100,
+              "duration": 13763749800,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 6,
-        "name": "Provider directed to the Home Page",
+        "line": 5,
+        "name": "Invite via Email Pop- up Verification",
         "description": "",
-        "id": "home-page;provider-directed-to-the-home-page",
+        "id": "invite-email;invite-via-email-pop--up-verification",
         "after": [
           {
             "result": {
-              "duration": 4170354100,
+              "duration": 3851488800,
               "status": "passed"
             },
             "match": {
@@ -34,156 +34,348 @@
         "steps": [
           {
             "result": {
-              "duration": 15328100,
+              "duration": 5735183900,
               "status": "passed"
             },
-            "line": 7,
-            "name": "the user is on the Home page",
+            "line": 6,
+            "name": "the provider clicks on the Invite Option",
             "match": {
-              "location": "HomePage.user_HomePage()"
+              "location": "InviteEmail.CLicks_on_InviteOption()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 7996788500,
+              "duration": 672686300,
               "status": "passed"
             },
-            "line": 8,
-            "name": "the user will be able to Copy the Generic Link",
+            "line": 7,
+            "name": "the user will be able to select the Invite via Email option",
             "match": {
-              "location": "HomePage.Copy_Link()"
+              "location": "InviteEmail.Selects_Invite_EmailOption()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1227237200,
+              "duration": 897460900,
               "status": "passed"
             },
-            "line": 9,
-            "name": "the user will be able to Invite Via SMS and Email",
+            "line": 8,
+            "name": "the user will be able to see the Invite Via Email Text and Email icon on the Pop-up",
             "match": {
-              "location": "HomePage.user_Inivite_Email_SMS()"
+              "location": "InviteEmail.Email_Pop_up()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2093222200,
+              "duration": 763787400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user will be able to see the Patient email address Heading and Patient Email address field",
+            "match": {
+              "location": "InviteEmail.Patient_Email_Add_Heading_and_Field()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 782977700,
               "status": "passed"
             },
             "line": 10,
-            "name": "the user will be able to see the Group Call option on the Home page",
+            "name": "the user will be able to see the Message Heading and Message body which includes the Template of the Email",
             "match": {
-              "location": "HomePage.GroupCall_HomePage()"
+              "location": "InviteEmail.Message_heading_and_Message_Body()"
             },
             "keyword": "* "
           },
           {
             "result": {
-              "duration": 1695284800,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "the user will be able to see the Welcome Text and Provider Name on the Home Page",
-            "match": {
-              "location": "HomePage.welcome_text()"
-            },
-            "keyword": "* "
-          },
-          {
-            "result": {
-              "duration": 468491600,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "the user will be able to see the Persivia Telehealth Logo and Text",
-            "match": {
-              "location": "HomePage.Persivia_TH_Logo_Text()"
-            },
-            "keyword": "* "
-          },
-          {
-            "result": {
-              "duration": 404914100,
+              "duration": 412412900,
               "status": "passed"
             },
             "line": 13,
-            "name": "the user will be able to see the Home Tab in the left menu",
+            "name": "the user will be able to see the Send Email Button",
             "match": {
-              "location": "HomePage.Left_Menu_Home()"
+              "location": "InviteEmail.Send_Email_Button()"
             },
             "keyword": "* "
           },
           {
             "result": {
-              "duration": 482920500,
+              "duration": 870149000,
               "status": "passed"
             },
             "line": 14,
-            "name": "the user will be able to see the Adminstration Tab in the left menu",
+            "name": "the user will be able to see the Cancel Button",
             "match": {
-              "location": "HomePage.Left_Menu_Admin()"
-            },
-            "keyword": "* "
-          },
-          {
-            "result": {
-              "duration": 515200700,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "the user will be able to see the Logs under Adminstration Tab in the left menu",
-            "match": {
-              "location": "HomePage.Logs_Admin()"
-            },
-            "keyword": "* "
-          },
-          {
-            "result": {
-              "duration": 525841800,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "the user will be able to see the Analytics under Adminstration Tab in the left menu",
-            "match": {
-              "location": "HomePage.Analytics_Admin()"
-            },
-            "keyword": "* "
-          },
-          {
-            "result": {
-              "duration": 478344200,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "the user will be able to see the Patient Queue on the Home page",
-            "match": {
-              "location": "HomePage.Patient_Queue()"
-            },
-            "keyword": "* "
-          },
-          {
-            "result": {
-              "duration": 2504854000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "the user will be able to see the Logout button on the Home Page",
-            "match": {
-              "location": "HomePage.Logout_TH()"
+              "location": "InviteEmail.Cancel_Email_Button()"
             },
             "keyword": "* "
           }
         ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 40290175500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AutomaticLoginLogout.Login()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Invite via Email with valid Email Address",
+        "description": "",
+        "id": "invite-email;invite-via-email-with-valid-email-address;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3696187600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AutomaticLoginLogout.Logout()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6576792400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user opens the Email invite option",
+            "match": {
+              "location": "InviteEmail.emails_inivte_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1043648900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user enters the valid fasih.haider@sltn.net address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fasih.haider@sltn.net",
+                  "offset": 26
+                }
+              ],
+              "location": "InviteEmail.user_enters_email(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 459043200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user clicks on the Send Email Button",
+            "match": {
+              "location": "InviteEmail.user_send_email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 371400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the email will be sent to the respective email address",
+            "match": {
+              "location": "InviteEmail.email_sent()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1052171400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "there will be a Sucessful message will be shown on the top",
+            "match": {
+              "location": "InviteEmail.email_alert()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11474687900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AutomaticLoginLogout.Login()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Invite via email with invalid Email Address",
+        "description": "",
+        "id": "invite-email;invite-via-email-with-invalid-email-address;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3871667500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AutomaticLoginLogout.Logout()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4975898400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the provider clicked on the on the invite option and open the Email Invite",
+            "match": {
+              "location": "InviteEmail.provider_opens_the_email_invite()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999346800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the user enters the invalid abc.com address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc.com",
+                  "offset": 28
+                }
+              ],
+              "location": "InviteEmail.user_enters_emailAddress(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 281700,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the system will analyse the email address",
+            "match": {
+              "location": "InviteEmail.system_analyse()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2541213900,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "the system will generate an error under the Email field",
+            "match": {
+              "location": "InviteEmail.email_invalid_format_error()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9112606700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AutomaticLoginLogout.Login()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Invite via Email Template without Passcode",
+        "description": "",
+        "id": "invite-email;invite-via-email-template-without-passcode",
+        "after": [
+          {
+            "result": {
+              "duration": 3795863800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AutomaticLoginLogout.Logout()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15385512800,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the user opens the Email invite",
+            "match": {
+              "location": "InviteEmail.email_invite_PopUp()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 506944700,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "the user will see the Email Template in the Email Body",
+            "match": {
+              "location": "InviteEmail.email_body()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1456372400,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "there will be no passcode in the Email Body",
+            "match": {
+              "location": "InviteEmail.no_passcode()"
+            },
+            "keyword": "And "
+          }
+        ]
       }
     ],
-    "name": "Home Page",
-    "description": "Given the user is on the Telehealth Login Page",
-    "id": "home-page",
+    "name": "Invite Email",
+    "description": "  Given the user is on the Telehealth Home Page",
+    "id": "invite-email",
     "keyword": "Feature",
-    "uri": "Include/features/CareSpace Regression/HomePage.feature",
+    "uri": "Include/features/CareSpace Regression/InviteEmail.feature",
     "tags": []
   }
 ]

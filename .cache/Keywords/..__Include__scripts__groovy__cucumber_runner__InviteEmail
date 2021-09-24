@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "E4EA1F37317634D905D7D9F99B95575D",
+  "keywordClasses": [
+    {
+      "name": "cucumber_runner.InviteEmail",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}
