@@ -76,17 +76,18 @@ class InviteEmail {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/InviteEmail/Obj_MessageHeading'), 0)
 	}
 
-	/*@And("the user will be able to see the Choose language Heading and able to select other Language through drop down")
+	@And("the user will be able to see the Choose language Heading and able to select other Language through drop down in Invite Email")
 	 def Choose_Language() {
-	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/Invite Email/Obj_ChooseLanguageHeading'), 0)
-	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/Invite Email/Obj_ChooseLanguageDropDown'), 0)
-	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/Invite Email/Obj_SpanishLanguage'), 0)
-	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/Invite Email/Obj_EnglishLanguage'), 0)
+	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/InviteEmail/Obj_ChooseLanguageHeading'), 0)
+	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/InviteEmail/Obj_ChooseLanguageDropDown'), 0)
+	 WebUI.click(findTestObject('Object Repository/Regression/InviteEmail/Obj_ChooseLanguageDropDown'))
+	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/InviteEmail/Obj_SpanishLanguage'), 0)
+	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/InviteEmail/Obj_EnglishLanguage'), 0)
 	 }
-	 @And("by default english will be selected as Language")
+	 @And("by default english will be selected as Language in Invite Email")
 	 def ByDefault_English() {
-	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/Invite Email/Obj_ByDefaultLanguage'), 0)
-	 }*/
+	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/InviteEmail/Obj_ByDefaultLanguage'), 0)
+	 }
 
 	@And("the user will be able to see the Send Email Button")
 	def Send_Email_Button() {

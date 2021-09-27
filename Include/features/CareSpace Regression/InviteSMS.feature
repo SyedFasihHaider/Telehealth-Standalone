@@ -8,8 +8,8 @@ Feature: Invite SMS
     And the user will be able to see the Invite Via SMS Text and SMS icon on the Pop-up
     * the user will be able to see the Patient Mobile Number Heading and Patient Mobile Number field
     * the user will be able to see the Message Heading and Message body which includes the Template of the SMS
-    #* the user will be able to see the Choose language Heading and able to select other Language through drop down
-    #* by default english will be selected as Language
+    * the user will be able to see the Choose language Heading and able to select other Language through drop down
+    * by default english will be selected as Language
     * the user will be able to see the Send SMS Button
     * the user will be able to see the Cancel Button to close the SMS Pop-Up
 
@@ -43,3 +43,16 @@ Feature: Invite SMS
    # When the user clicks on the SMS Invite
    # And the user will be able to see the SMS Template
    # And there will be a passcode in the SMS Template
+   
+   Scenario: User chooses the Spanish Language
+   When the user clicks on the SMS Invite
+   And the user clicks on the Choose Language Dropdown and Selects the Spannish Language
+   Then message in the SMS invite body should be changed to Spannish
+   And the text will be starting from Hola
+   
+   Scenario: User chooses the English Language from Spanish Language
+   When the user selects the Spanish Language
+   And user wants to switch back to the English Language 
+   Then on clicking back to the Enlish Language 
+   And Context of the SMS invite language should be changes to the English
+   And the text will be starting from Hi,

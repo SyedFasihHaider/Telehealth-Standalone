@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "CDD4210D0293215D0167F85C4164506B",
+  "keywordFileContentHash": "FD25047A68B0D799B4EB6754AB84C98E",
   "keywordClasses": [
     {
       "name": "default_package.InviteEmail",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

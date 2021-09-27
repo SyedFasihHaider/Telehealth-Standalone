@@ -76,17 +76,18 @@ class InviteSMS {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/InviteEmail/Obj_MessageHeading'), 0)
 	}
 
-	/*@And("the user will be able to see the Choose language Heading and able to select other Language through drop down")
+	@And("the user will be able to see the Choose language Heading and able to select other Language through drop down")
 	 def Choose_Language_SMSInvite() {
-	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/Invite Email/Obj_ChooseLanguageHeading'), 0)
-	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/Invite Email/Obj_ChooseLanguageDropDown'), 0)
-	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/Invite Email/Obj_SpanishLanguage'), 0)
-	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/Invite Email/Obj_EnglishLanguage'), 0)
+	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/InviteEmail/Obj_ChooseLanguageHeading'), 0)
+	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/InviteEmail/Obj_ChooseLanguageDropDown'), 0)
+	 WebUI.click(findTestObject('Object Repository/Regression/InviteEmail/Obj_ChooseLanguageDropDown'))
+	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/InviteEmail/Obj_SpanishLanguage'), 0)
+	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/InviteEmail/Obj_EnglishLanguage'), 0)
 	 }
 	 @And("by default english will be selected as Language")
 	 def ByDefault_English_SMS() {
-	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/Invite Email/Obj_ByDefaultLanguage'), 0)
-	 }*/
+	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/InviteEmail/Obj_ByDefaultLanguage'), 0)
+	 }
 
 	@And("the user will be able to see the Send SMS Button")
 	def Send_SMS_Button() {
@@ -199,4 +200,73 @@ class InviteSMS {
 		WebUI.delay(1)
 		WebUI.click(findTestObject('Object Repository/Regression/InviteSMS/Obj_CancelButton'))
 	}*/
+	
+	/**
+	 * Scenario:User chooses the Spanish Language
+	 */
+	@When("the user clicks on the SMS Invite")
+	def SMS() {
+		WebUI.click(findTestObject('Object Repository/Regression/HomePage/Obj_Invite'))
+		WebUI.click(findTestObject('Object Repository/Regression/HomePage/Obj_SMSInvite'))
+	}
+	
+	@And("the user clicks on the Choose Language Dropdown and Selects the Spannish Language")
+	def Spanish_Language() {
+		WebUI.click(findTestObject('Object Repository/Regression/InviteEmail/Obj_ChooseLanguageDropDown'))
+		WebUI.click(findTestObject('Object Repository/Regression/InviteEmail/Obj_SpanishLanguage'))
+	}
+	
+	@Then("message in the SMS invite body should be changed to Spannish")
+	def Message_to_Spanish() {
+		
+	}
+	
+	@And("the text will be starting from Hola")
+	def Message_Starts() {
+		
+		
+		WebUI.click(findTestObject('Object Repository/Regression/InviteEmail/Obj_CancelButton'))
+		WebUI.delay(1)
+	}
+	/**
+	 * Scenario:User chooses the English Language from Spanish Language
+	 */
+	@When("the user selects the Spanish Language")
+	def SMS_Option() {
+		WebUI.click(findTestObject('Object Repository/Regression/HomePage/Obj_Invite'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Object Repository/Regression/HomePage/Obj_SMSInvite'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Object Repository/Regression/InviteEmail/Obj_ChooseLanguageDropDown'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Object Repository/Regression/InviteEmail/Obj_SpanishLanguage'))
+	}
+	
+	@And("user wants to switch back to the English Language")
+	def Spanish_Language_Selects() {
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Object Repository/Regression/InviteEmail/Obj_ChooseLanguageDropDown'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Object Repository/Regression/InviteEmail/Obj_EnglishLanguage'))
+	}
+	
+	@Then("on clicking back to the Enlish Language")
+	def Message_to_Spanishs() {
+		
+	}
+	
+	@And("Context of the SMS invite language should be changes to the English")
+	def Message_Changes() {
+		
+
+	}
+	@And("the text will be starting from Hi,")
+	def Verify_text() {
+		
+		
+		WebUI.click(findTestObject('Object Repository/Regression/InviteEmail/Obj_CancelButton'))
+		WebUI.delay(1)
+	}
+	
+
 }

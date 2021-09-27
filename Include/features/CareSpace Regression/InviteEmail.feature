@@ -8,8 +8,8 @@ Feature: Invite Email
     And the user will be able to see the Invite Via Email Text and Email icon on the Pop-up
     * the user will be able to see the Patient email address Heading and Patient Email address field
     * the user will be able to see the Message Heading and Message body which includes the Template of the Email
-    # * the user will be able to see the Choose language Heading and able to select other Language through drop down
-    # * by default english will be selected as Language
+    * the user will be able to see the Choose language Heading and able to select other Language through drop down in Invite Email
+    * by default english will be selected as Language in Invite Email
     * the user will be able to see the Send Email Button
     * the user will be able to see the Cancel Button
 
