@@ -43,3 +43,16 @@ Feature: Invite Email
    # When the user clicks on the Email Invite
    # And the user will be able to see the Email Template
    # And there will be a passcode in the Email Template
+   
+   Scenario: User chooses the Spanish Language - Invite Email
+   When the user clicks on the Email Invite
+   And the user clicks on the Choose Language Dropdown and Selects the Spannish Language in Invite Email
+   Then message in the Email invite body should be changed to Spannishs
+   And the text will be starting from Hola, Spanish Language
+   
+   Scenario: User chooses the English Language from Spanish Language - Invite Email
+   When the user selects the Spanish Language in the invite Email option
+   And user wants to switch back to the English Language from Spanish 
+   Then on clicking back to the Enlish Language from the Language Dropdown
+   And Context of the SMS invite language should be changes to the English Language
+   And the text will be starting from Hi,English Language
