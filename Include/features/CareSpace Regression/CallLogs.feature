@@ -121,3 +121,15 @@ Feature: Call Logs
     Examples: 
       | Data Time           |
       | 10/04/2021 08:30 PM |
+
+  Scenario Outline: User selects mulitple filters
+    When the user lands on the Calls Logs
+    And the user selects the Peer to Peer Call type
+    And the user enters the <Name> to search from the logs
+    And the user selects the From <Date and Time>
+    And the user clicks on the Search Button
+    Then the result should be according to the filter applied
+
+    Examples: 
+      | Name  | Data Time           |
+      | Fasih | 10/04/2021 08:30 PM |
