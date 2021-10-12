@@ -105,9 +105,9 @@ class HomePage {
 	}
 
 	/**@And("the user will be able to see the Settings under Adminstration Tab in the left menu")
-	def Settings_Admin() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/HomePage/Obj_Settings'), 0)
-	}*/
+	 def Settings_Admin() {
+	 WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/HomePage/Obj_Settings'), 0)
+	 }*/
 
 	@And("the user will be able to see the Patient Queue on the Home page")
 	def Patient_Queue() {
@@ -118,6 +118,5 @@ class HomePage {
 	def Logout_TH() {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Regression/Logout/Obj_Logout'), 0)
 		WebUI.delay(2)
-		
 	}
 }

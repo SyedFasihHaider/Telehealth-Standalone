@@ -195,8 +195,8 @@ class InviteEmail {
 	 WebUI.delay(1)
 	 WebUI.click(findTestObject('Object Repository/Regression/Invite Email/Obj_CancelButton'))
 	 }*/
-	
-	
+
+
 	/**
 	 * Scenario:User chooses the Spanish Language
 	 */
@@ -205,22 +205,21 @@ class InviteEmail {
 		WebUI.click(findTestObject('Object Repository/Regression/HomePage/Obj_Invite'))
 		WebUI.click(findTestObject('Object Repository/Regression/HomePage/Obj_EmailInvite'))
 	}
-	
+
 	@And("the user clicks on the Choose Language Dropdown and Selects the Spannish Language in Invite Email")
 	def Spanish_Language_Email() {
 		WebUI.click(findTestObject('Object Repository/Regression/InviteEmail/Obj_ChooseLanguageDropDown'))
 		WebUI.click(findTestObject('Object Repository/Regression/InviteEmail/Obj_SpanishLanguage'))
 	}
-	
+
 	@Then("message in the Email invite body should be changed to Spannishs")
 	def Message_to_SpanishsEmail() {
-		
 	}
-	
+
 	@And("the text will be starting from Hola, Spanish Language")
 	def Message_StartsEmail() {
-		
-		
+
+
 		WebUI.click(findTestObject('Object Repository/Regression/InviteEmail/Obj_CancelButton'))
 		WebUI.delay(1)
 	}
@@ -237,7 +236,7 @@ class InviteEmail {
 		WebUI.delay(1)
 		WebUI.click(findTestObject('Object Repository/Regression/InviteEmail/Obj_SpanishLanguage'))
 	}
-	
+
 	@And("user wants to switch back to the English Language from Spanish")
 	def Spanish_Language_Selects_Email() {
 		WebUI.delay(1)
@@ -245,21 +244,18 @@ class InviteEmail {
 		WebUI.delay(1)
 		WebUI.click(findTestObject('Object Repository/Regression/InviteEmail/Obj_EnglishLanguage'))
 	}
-	
+
 	@Then("on clicking back to the Enlish Language from the Language Dropdown")
 	def Message_to_SpanishEmail() {
-		
 	}
-	
+
 	@And("Context of the SMS invite language should be changes to the English Language")
 	def EmailMessage_Changes() {
-		
-
 	}
 	@And("the text will be starting from Hi,English Language")
 	def Verify_textEmail() {
-		
-		
+
+
 		WebUI.click(findTestObject('Object Repository/Regression/InviteEmail/Obj_CancelButton'))
 		WebUI.delay(1)
 	}
